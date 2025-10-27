@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Confession Message</title>
+    <!-- Load Tailwind CSS for styling --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set standard font and styles --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background (near black) */
+            color: #f0f0f0; /* Light text for contrast */
+        }
+        .heart-icon {
+            color: #e91e63; /* Deep Pink heart color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Message Card --><div class="max-w-md w-full bg-gray-800 p-8 md:p-10 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl border border-pink-700 text-center">
+
+        <!-- Header with Icon --><div class="mb-8">
+            <svg class="heart-icon w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+            <h1 class="text-4xl font-extrabold text-pink-500">A small confession</h1>
+        </div>
+
+        <!-- Confession Message Content --><p class="text-lg text-gray-200 mb-8 leading-relaxed">
+            Hey Jojo,<br>
+            Hajer, I'll go straight to the point: I really like your personality, and I would like to get to know you even more because I'm very interested in you. But what really matters is, would you like to? ❤️
+        </p>
+
+        <!-- Buttons Area (Accept, Decline) --><div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+
+            <!-- Accept Button --><a id="accept-apology-btn" 
+               href="mailto:placeholder@example.com?subject=💖%20I%20Would%20Like%20To%2C%20&body=(Sent%20from%20the%20Confession%20Page)"
+               class="flex-1 text-center py-3 px-6 rounded-full font-bold text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-400/70 transition duration-150 shadow-lg transform hover:scale-[1.03] text-lg">
+                Yes I Would Like To ❤️
+            </a>
+
+            <!-- Decline Button --><a id="decline-apology-btn" 
+               href="mailto:placeholder@example.com?subject=💔%20I%20Wouldnt%27t%20Like%20To%20Know%20You%20More&body=(Sent%20from%20the%20Confession%20Page)"
+               class="flex-1 text-center py-3 px-6 rounded-full font-bold text-pink-400 bg-gray-700 border-2 border-pink-500 hover:bg-gray-600 hover:text-pink-300 focus:outline-none focus:ring-4 focus:ring-pink-300/70 transition duration-150 shadow-lg transform hover:scale-[1.03] text-lg">
+                No I Would Not Like To 💔
+            </a>
+        </div>
+
+        <!-- Small Reminder --><p class="mt-8 text-sm text-gray-400">
+            *Your email application will open to send your response Doxaaa.
+        </p>
+    </div>
+
+    <script>
+        // Your email is already set here:
+        const YOUR_EMAIL = "totybont@gmail.com"; 
+        document.getElementById('accept-apology-btn').href = document.getElementById('accept-apology-btn').href.replace("placeholder@example.com", YOUR_EMAIL);
+        document.getElementById('decline-apology-btn').href = document.getElementById('decline-apology-btn').href.replace("placeholder@example.com", YOUR_EMAIL);
+    </script>
+</body>
+</html>
